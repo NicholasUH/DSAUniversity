@@ -10,7 +10,7 @@ class Solution:
     
 
 '''
-1.create hashset to store already seen values
+1. create hashset to store already seen values
 2. iterate through array and check each index to see if already seen
 3. if seen, return True indicating a duplicate
 4. add value at index to hashset and continue
