@@ -28,3 +28,4 @@ class Solution:
             t_dict[t[i]] += 1
 
         return s_dict == t_dict
+    
