@@ -9,6 +9,7 @@ You can return the answer in any order.
 
 
 '''
+Psuedo Code:
 create a dictionary mapping (value:index)
 iterate through nums repeating the following steps
 - calculate complement(target - value)
