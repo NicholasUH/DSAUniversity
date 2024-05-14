@@ -9,11 +9,11 @@ different word or phrase, typically using all the original letters exactly once.
 
 '''
 Logic:
-To group anagrams together, we will create a dictionary to store a key:list of anagrams.
-The key that we will use will be tuple of character counts of each word. To create this tuple, we will create a list
-of length 26, for a-z, then iterate through each word and add the character count of each word to a list.
-We will then use the list as the key in the dictionary and add the word to the list associated with the key.
-After iterating, we will return the values of the dictionary.
+Use a dictionary to store the grouped anagrams.
+To create the key, create a list length 26, and fill it with 0.
+To fill in the list, iterate through each word and increase the count at the index of that character(a - 0, b - 1, c - 2).
+Then append the word to the dictionary using the list as the key.
+Return the values of the dictionary.
 '''
 
 class Solution:
