@@ -15,14 +15,6 @@ exists in the dictionary. If it does, we know that there exists two numbers in t
 return the two indices.
 '''
 
-'''
-Psuedo Code:
-create a dictionary mapping (value:index)
-iterate through nums repeating the following steps
-- calculate complement(target - value)
-- if complement exists, return the two indices
-- else, add to dictionary (current value : current index)
-'''
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         

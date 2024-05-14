@@ -13,15 +13,6 @@ Then we will create two dictionaries for strings s and t. We will add the letter
 Next, we will check if the dictionaries are the same. If they are the same, it is an anagram.
 '''
 
-'''
-Psuedo Code:
-1. check if the length of s and t are the same, indicating the possibility of an anagram
-2. create two dioctionaries for strings s and t
-3. add the letters and their counts to the respective dictionaries
-4. check if the dictionaries are the same
-- if they are being the same indicates that they both have the same letters and counts, therefore it is an anagram
-'''
-
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
 
