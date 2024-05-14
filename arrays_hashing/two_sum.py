@@ -10,9 +10,9 @@ You can return the answer in any order.
 
 '''
 Logic:
-We will iterate through the array and add the elements:index to the dictionary. As we add, we check if the complement(target - current value)
-exists in the dictionary. If it does, we know that there exists two numbers in the array that add up to the target and
-return the two indices.
+Use a dictionary to store the value and its index.
+Iterate through nums, at each element, check if complement(target - element) exists in the dictionary and do appropriate action.
+If exists, return two indicies and if not, add element and its index to the dictionary.
 '''
 
 class Solution:
