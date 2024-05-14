@@ -6,6 +6,13 @@ typically using all the original letters exactly once.
 '''
 
 '''
+Logic:
+We first check if the two strings are the same length as that is necessary for two strings to be an anagram. 
+Then we will create two dictionaries for strings s and t. We will add the letters and their counts to the respective dictionaries. 
+Next, we will check if the dictionaries are the same. If they are the same, it is an anagram.
+'''
+
+'''
 Psuedo Code:
 1. check if the length of s and t are the same, indicating the possibility of an anagram
 2. create two dioctionaries for strings s and t
