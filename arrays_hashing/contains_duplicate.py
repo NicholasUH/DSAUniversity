@@ -4,7 +4,8 @@ Given an integer array nums, return true if any value appears at least twice in 
 
 '''
 Logic:
-We will iterate through the array and add elements to the hashset. As we add, we check if the element has already been added to the hashset. If it has, we know that the element is a duplicate and return the appropriate boolean value.
+We will iterate through the array and add elements to the hashset. As we add, we check if the element has already been added to the hashset. 
+If it has, we know that the element is a duplicate and return the appropriate boolean value.
 '''
 
 '''
