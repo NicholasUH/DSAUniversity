@@ -13,6 +13,7 @@ Iterate through that hashset and at each element,
 -if so, keep checking if the next numbers in the sequence exists
 Update longest if a new longest is found
 '''
+
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         nums_set = set(nums)
