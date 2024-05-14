@@ -13,6 +13,7 @@ To group anagrams together, we will create a dictionary to store a key:list of a
 The key that we will use will be tuple of character counts of each word. To create this tuple, we will create a list
 of length 26, for a-z, then iterate through each word and add the character count of each word to a list.
 We will then use the list as the key in the dictionary and add the word to the list associated with the key.
+After iterating, we will return the values of the dictionary.
 '''
 
 '''
