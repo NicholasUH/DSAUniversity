@@ -1,6 +1,10 @@
 '''
-Given an integer array nums, return true if any value appears at least twice in the array, 
-and return false if every element is distinct.
+Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+'''
+
+'''
+Logic:
+We will iterate through the array and add elements to the hashset. As we add, we check if the element has already been added to the hashset. If it has, we know that the element is a duplicate and return the appropriate boolean value.
 '''
 
 '''
@@ -21,12 +25,3 @@ class Solution:
                 return True
             hashset.add(n)
         return False
-
-
-'''
-Logic: if the set has no duplicates, the length of the set will be equal to the length of the array
-'''
-class AlternateSolution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
-        return not len(set(nums)) == len(nums)
-    
