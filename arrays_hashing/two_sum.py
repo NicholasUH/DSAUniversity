@@ -26,7 +26,6 @@ iterate through nums repeating the following steps
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         
-
         index_dict = {}
 
         for index, value in enumerate(nums):
@@ -35,4 +34,3 @@ class Solution:
                 return [index, index_dict[complement]]
             
             index_dict[value] = index 
-
