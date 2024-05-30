@@ -9,11 +9,12 @@ different word or phrase, typically using all the original letters exactly once.
 
 '''
 Logic:
-Use a dictionary to store the grouped anagrams.
-To create the key, create a list length 26, and fill it with 0.
-To fill in the list, iterate through each word and increase the count at the index of that character(a - 0, b - 1, c - 2).
-Then append the word to the dictionary using the list as the key.
-Return the values of the dictionary.
+For this problem, our goal is to group the words that are anagrams of each together. The trick behind this problem is to use a dictionary
+that maps something to a list of the words that are anagrams. We will then return the values of the dictionary. The problem is what should we
+use as the keys of the dictionary. One approach is to use the words sorted as the key, as anagrams when sorted will be the same. This solution
+does work but is inefficent as sorting takes O(nlogn) time. A better solution is to use the count of each character in the word as the key.
+We can store these counts in a list length 26, each index per letter. The time complexity of this solution is O(n * m). n being the length of
+the list, m being the length of each word
 '''
 
 class Solution:
