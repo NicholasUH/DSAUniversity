@@ -10,9 +10,11 @@ You can return the answer in any order.
 
 '''
 Logic:
-Use a dictionary to store the value and its index.
-Iterate through nums, at each element, check if complement(target - element) exists in the dictionary and do appropriate action.
-If exists, return two indicies and if not, add element and its index to the dictionary.
+Our goal for this problem is to find the two numbers that add up to the target. The apparent solution is to use two for-loops and individually
+check each combination of numbers. The time complexity of this solution is O(n^2) which is highly inefficient. The better solution is to utilize
+a hashmap that maps the value to the index, as we need to return the indices of the values. The logic is to iterate through each index and check
+whether a value that has been since seen adds up the current value to the target and return the two indicies. The time complexity of this 
+solution is O(n) as we only need to iterate once through the array in total.
 '''
 
 class Solution:
