@@ -1,8 +1,17 @@
 '''
-Have 2 pointers, ones starts at the beginning and one at the end.
-Keep iterating while the start is less than the end pointer
-On each iteration, iterate the start right and end left until both are on alnumeric characters
-Check if the character at both pointers are equal, return False if they are not, else iterate to next character for next iteration.
+Problem:
+A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, 
+it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+
+Given a string s, return true if it is a palindrome, or false otherwise.
+'''
+
+'''
+Logic:
+To solve this problem to check if a string is a palindrone, we can utilize the two pointer approach. We will have two pointers start and end.
+We check if the letter at the start and end indices is the same and return the appropiate response. After checking the letter, we will move
+the start index right to the next alpha-numeric character and the end index left to the next alpha-numeric character. We will repeat this
+process until the start and end indices meet.
 '''
 
 class Solution:
