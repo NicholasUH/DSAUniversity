@@ -13,10 +13,9 @@ Only the filled cells need to be validated according to the mentioned rules.
 
 '''
 Logic:
-create 3 dictionaries to map the seen elements of a particular row, column, or grid.
-Iterate through board, and check if the index is filled.
-If so, check if the element has already been seen in the same row, col, or grid and do appropriate action.
-If seen, return False else add current index, to dictionaries
+The logic behind this problem seeing if the board is valid based on the rules of sudoku. The idea behind the solution is to iterate through 
+the board and check if the number has already been seen in the row, column, and grid and return the appropriate answer. To check if the number
+is valid, we can create three dictionaries that maps the (row, column, grid) to a set that will contain the numbers seen in the row, column, and grid.
 '''
 
 class Solution:

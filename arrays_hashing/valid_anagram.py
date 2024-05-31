@@ -8,10 +8,9 @@ typically using all the original letters exactly once.
 
 '''
 Logic:
-Check if length of s and t are equal.
-Create two dictionaries, one for s and one for t.
-Iterate through s and add each character and its count to the s dictionary.
-Check if the t dictionary is equal to the s dictionary.
+To check if the strings are anagrams, we first check if the lengths are equal, meaning that it is possible for it to be an anagram. Once we check
+we can create two dictionaries that will store the counts of each letter in the string and check whether or not the dictionaries are equal, if
+they are equal this indicates that the strings are anagrams.
 '''
 
 class Solution:
