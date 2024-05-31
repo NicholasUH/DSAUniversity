@@ -9,16 +9,12 @@ You must write an algorithm that runs in O(n) time and without using the divisio
 
 '''
 Logic:
-Create a answer list length equal to nums filled with 1
-Create two ints, prefix(product of left elements), postfix(product of right elements)
+The problem behind this problem is that each index should contain the product of all the elements except the element at that index and to achieve a O(n) time complexity.
+The best solution is to create a prefix(product of left elements) and postfix (product of right elements) variable and then multiply them when iterating through the array.
+We will have a answer array that originally stores [1] length nums. At each iteration, we will update the answer array with the current prefix/postfix and update the prefix/postfix
+for the next indices. After iterating for prefix and postfix, the answer array should contain the correct products. The time complexity is O(n) time we iterate through
+the array once and have O(n) space for the answer array.
 
-Prefix Iteration:
-set current answer to the prefix
-multiply prefix with the current nums
-
-Postfix Iteration:
-multiply current answer with postfix to get final result
-multiply postfix with current nums
 '''
 
 class Solution:
