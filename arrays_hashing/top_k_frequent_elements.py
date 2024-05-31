@@ -5,10 +5,11 @@ You may return the answer in any order.
 '''
 
 '''
-Logic
-Create a dictionary that stores the num:counts and fill it using nums
-Create a list that stores each value at the index equal to their count
-Iterate backwards in the list, adding the first k elements to the list
+Logic:
+In this problem, the goal is to find the k most frequent elements in an array. For our solution, we can utilize a dictionary or hashmap to map the value to the count. After
+creating the dictionary, we can sort the values based on the count by creating a empty list ,that contains another list, size length of nums + 1. We will use the indicies to represent the count, meaning
+at index 1 of the list, we can say that the values store there have a count of 1. After storing the values, we will iterate backwards and and get the first k elements.
+This solution has a O(n) time complexity as we only iterate through the array once and have O(n) space for the dictionary.
 '''
 
 class Solution:
