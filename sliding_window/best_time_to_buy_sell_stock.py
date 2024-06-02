@@ -9,12 +9,11 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 
 '''
 Logic:
-create a left and right pointer
--left is used to indicate the lowest value to buy
--right is used to indicate the future highest value to sell
-Iterate the right pointer to the end
--if left < right, see if new maximum
--if right < left, update left to new minimum
+To find the maximum profit we can use the sliding window technique. This helps make sure that we consider all possible combinations. We will
+create two pointers, one starts at index 0 and another on index 1. We will iterate the right pointer to the end, and check if the right pointer
+value is greater or less than the left pointer value. We say that the left pointer value is the buy day while the right is the sell day. If the 
+current right pointer value is greater than the left, then we update the max profit, else we can assume that the right pointer is less than
+the left, meaning we found a new lowest buy date so a greater max profit is possible.
 '''
 
 class Solution:

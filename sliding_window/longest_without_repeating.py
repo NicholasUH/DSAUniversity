@@ -5,11 +5,11 @@ Given a string s, find the length of the longest substring without repeating cha
 
 '''
 Logic:
-create a set to store the letters in the current substring
-Iterate the right pointer to the end
--check if letter is a repeat by checking the set
--if seen, remove that letter and the ones before it, and iterate the left pointer
-add the letter to the set and update the max length
+To find the longest substring, we can utilize a sliding window approach and hashsets. The sliding window will encase the current substring,
+while the hashset will hold the characters of the current substring. We will have a left and right pointer, both start at index 0.
+We will iterate the right pointer to the end and add each new character to the hashset and update the length if a new longest substring is found.
+If a repeating value is found, we will remove all characters from the left pointer up to the repeating value and update the left pointer.
+Removing all characters is necessary as we consider continuous characters for the substring.
 '''
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
