@@ -7,14 +7,13 @@ Notice that the solution set must not contain duplicate triplets.
 
 '''
 Logic:
-sort nums to get all negative numbers first
-iterate through unique negative values in nums
--create left and right pointers, covering values left of current index
--while left < right
- -calculate sum of three values
- -if sum < 0, increase left to increase sum as sorted
- -if sum > 0, decrease right to decrease sum as sorted
- -else, append list of 3 values to result list, continue with current iteration but left pointer must start on new value
+The logic behind this problem is a combination of the two sum I and II problems with the target value being 0. To begin, we only need
+to consider the negative numbers as adding to positive numbers will never result in zero and making sure that each negative number is considered
+once in case of duplicates. We will also sort the array as the indices does not matter in this case getting all the negatives to the beginning of the array. 
+At each negative number, we will have a left and right pointer that encase the numbers to the right of the negative number. Similar to two sum II, we will
+iterate the pointers to increase or decrease the current sum, move right when we want to increase sum, or move left when we want to decrease sum.
+When the current sum equals zero, we will append the three numbers to the result list and continue iterating, but also making sure to move the
+left pointer to the next unique number making sure not to consider the same three numbers again.
 '''
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:

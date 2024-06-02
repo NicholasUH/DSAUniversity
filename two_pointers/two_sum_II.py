@@ -14,8 +14,8 @@ Logic:
 Like the original two sum problem, we need to find the two numbers that add up to the target. This problem adds in the stipulation that the
 array is sorted. We can use two pointers starting at the begin and end of the array to find the two numbers that add up to the target. We will
 iterate until the pointers meet or cross. We will add the two numbers together at the pointers and check if it is equal to the target.
-To determine how to iterate the pointers, we will use the fact that the array is sorted to our advantage. When the bound move to the left,
-we know that the sum will get smaller, and vice versa when the bounds moves to the right due to the sorted array.
+To determine how to iterate the pointers, we will use the fact that the array is sorted to our advantage. When the bounds move to the left,
+we know that the sum will get smaller, and vice versa when the bounds moves to the right due to the nature of the sorted array.
 '''
 
 class Solution:
