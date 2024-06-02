@@ -11,10 +11,10 @@ Notice that you may not slant the container.
 
 '''
 Logic:
-Create a left and right pointer at first and last index to create a container
-Iterate the pointers until they both meet or cross
--calculate the maximum area of the current container and update if it is a new maximum
--update the lower height pointer by 1 to get new bounds
+To find the maximum amount of water that can be stored, we can use a two pointer approach. We will have two pointers left and right that start
+at the beginning and end of the array respectively. We will then calculate the amount of water that can be contained by multiplying 
+the height(shorter array value of the two pointers) and the width(difference between the two pointers' indices), we will then update the maximum if
+a new maximum is found. We can then iterate one pointer by only moving the pointer with the lower height until the two pointers meet or cross.
 '''
 
 class Solution:
