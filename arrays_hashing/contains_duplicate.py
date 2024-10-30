@@ -3,11 +3,9 @@ Given an integer array nums, return true if any value appears at least twice in 
 '''
 
 '''
-Brute Force Logic: The goal is to check if an integer array contains any duplicates and return a boolean result. 
-A straightforward solution uses two loops: one iterates through each element as a "benchmark," 
-while the other checks every subsequent element against it. 
-Although effective, this solution has a time complexity of O(n^2), as each element is compared with all elements that follow, 
-which can lead to slow performance for large arrays.
+To determine if an integer array contains duplicates, we can start with a simple brute-force solution: use two loops to compare each element against every element that follows. 
+This approach checks every possible pair, allowing us to identify duplicates. 
+However, it has a time complexity of O(n²) due to repeated comparisons, which can slow down significantly with larger arrays.
 '''
 
 def containsDuplicate(self, nums: List[int]) -> bool:
@@ -19,10 +17,9 @@ def containsDuplicate(self, nums: List[int]) -> bool:
         return False
 
 '''
-Optimized Logic: To reduce iterations and increase efficiency, we can use a hash set, which allows fast access. 
-As we iterate through the array, we add each value to the hash set if it’s not already present. 
-If we find a value already in the set, it's a duplicate, so we return `True`. 
-Otherwise, we complete the loop and return `False` if no duplicates are found.
+To optimize, we can use a hash set to leverage its fast access time. As we iterate through the array, we add each number to the hash set if it’s not already there. 
+If we encounter a number that’s already in the set, we know it’s a duplicate and return `True` immediately. This approach reduces runtime to O(n), making it much more efficient for large arrays. 
+If no duplicates are found after checking all elements, we return `False`.
 '''
 
 def containsDuplicate(self, nums: List[int]) -> bool:
