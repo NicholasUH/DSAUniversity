@@ -17,8 +17,10 @@ def containsDuplicate(self, nums: List[int]) -> bool:
         return False
 
 '''
-To optimize, we can use a hash set to leverage its fast access time. As we iterate through the array, we add each number to the hash set if it’s not already there. 
-If we encounter a number that’s already in the set, we know it’s a duplicate and return `True` immediately. This approach reduces runtime to O(n), making it much more efficient for large arrays. 
+To optimize, we can use a hash set to leverage its fast access time. 
+As we iterate through the array, we add each number to the hash set if it’s not already there. 
+If we encounter a number that’s already in the set, we know it’s a duplicate and return `True` immediately. 
+This approach reduces runtime to O(n), making it much more efficient for large arrays. 
 If no duplicates are found after checking all elements, we return `False`.
 '''
 
