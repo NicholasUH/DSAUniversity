@@ -3,7 +3,8 @@ Given an integer array nums, return true if any value appears at least twice in 
 '''
 
 '''
-To determine if an integer array contains duplicates, we can start with a simple brute-force solution: use two loops to compare each element against every element that follows. 
+To determine if an integer array contains duplicates, we can start with a simple brute-force solution. 
+Use two loops to compare each element against every element that follows. 
 This approach checks every possible pair, allowing us to identify duplicates. 
 However, it has a time complexity of O(n²) due to repeated comparisons, which can slow down significantly with larger arrays.
 '''
