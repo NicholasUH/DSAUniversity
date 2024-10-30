@@ -1,13 +1,13 @@
-from collections import List
-
 '''
 Problem: Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 '''
 
 '''
 Brute Force Logic: The goal is to check if an integer array contains any duplicates and return a boolean result. 
-A straightforward solution uses two loops: one iterates through each element as a "benchmark," while the other checks every subsequent element against it. 
-Although effective, this solution has a time complexity of O(n^2), as each element is compared with all elements that follow, which can lead to slow performance for large arrays.
+A straightforward solution uses two loops: one iterates through each element as a "benchmark," 
+while the other checks every subsequent element against it. 
+Although effective, this solution has a time complexity of O(n^2), as each element is compared with all elements that follow, 
+which can lead to slow performance for large arrays.
 '''
 
 def containsDuplicate(self, nums: List[int]) -> bool:
