@@ -1,3 +1,28 @@
-# LeetCode
+# Algos Dungeon
 
-The purpose of this repository is for my personal preparation for technical interview questions and a collection of solutions of fundamental coding problems. The questions are from the Blind 75/NeetCode 150. Each file contains the problem description, my own explanation of the logic, and the code. 
+Welcome to the Algos Dungeon! This repository is a curated set of data structures and algorithms (DSA) problems taken from LeetCode(Blind 75/Neetcode 150), designed to aid technical interview preparation and deepen understanding of DSA concepts.
+
+# Categories
+This solutions are seperated into categories based on each problem. Categories include but are not limited to:
+
+- Binary Search
+  
+- Trees
+  
+- Graphs
+
+- 1D Dynamic Programming
+
+# Solutions
+
+In each category contains several problems and solutions for each problem, containing the following structure:
+
+- Problem Statement
+
+- Pseudo-code
+
+- Correctness Explanation
+
+- Algorithmic Analysis
+
+- Code Solution
