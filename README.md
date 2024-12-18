@@ -1,6 +1,6 @@
-# Algos Dungeon
+# DSA University
 
-Welcome to the Algos Dungeon! This repository is a curated set of data structures and algorithms (DSA) problems taken from LeetCode(Blind 75/Neetcode 150), designed to aid technical interview preparation and deepen understanding of DSA concepts.
+Welcome to the DSA University! This repository is a curated set of data structures and algorithms (DSA) problems taken from LeetCode(Blind 75/Neetcode 150), designed to aid technical interview preparation and deepen understanding of DSA concepts.
 
 # Categories
 This solutions are seperated into categories based on each problem. Categories include but are not limited to:
